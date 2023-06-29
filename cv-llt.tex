@@ -54,8 +54,8 @@
 % \geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
 
 % Change the colours if you want
-% \definecolor{SwishLineColour}{HTML}{00FFFF}
-% \definecolor{MarkerColour}{HTML}{0000CC}
+% \definecolor{SwishLineColour}{HTML}{172A41}
+% \definecolor{MarkerColour}{HTML}{172A41}
 
 % Change the item prefix marker if you want
 % \prefixmarker{$\diamond$}
@@ -64,27 +64,29 @@
 \includecomment{fullonly}
 % \excludecomment{fullonly}
 
+\usepackage{multicol}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \leftheader{%
-  {\LARGE\bfseries\sffamily Your Name Here, Ph.D.}
+  {\LARGE\bfseries\sffamily Elena Yan}
 
-  \makefield{\faEnvelope[regular]}{\href{mailto:example@gmail.com}{\texttt{example@gmail.com}}}
-  \makefield{\faTwitter}{\href{https://twitter.com/overleaf_example}{\texttt{@overleaf\_example}}}
-  \makefield{\faLinkedin}
-  {\href{http://www.linkedin.com/in/example/}{\texttt{example}}}
+  \makefield{\faEnvelope[regular]}{\href{mailto:elena.yan@studio.unibo.it}{\texttt{elena.yan@studio.unibo.it}}}
+  \makefield{\faEnvelope[regular]}{\href{mailto:yanelena0220@gmail.com}{\texttt{yanelena0220@gmail.com}}}
+  % \makefield{\faTwitter}{\href{https://twitter.com/overleaf_example}{\texttt{@overleaf\_example}}}
+  
+  \makefield{\faGithub}{\url{https://github.com/yan-elena}}
 
-  %% Next line
-  \makefield{\faGlobe}{\url{http://example.example.org/}}
+  \makefield{\faUser}{Birth date: 20/02/1999}
+  \makefield{\faMapPin[regular]}{Forlì, Italy}
 
   % You can use a tabular here if you want to line up the fields.
 }
 
 \rightheader{~}
 \begin{fullonly}
-\photo[r]{photo}
+\photo[r]{img/IMG_5109}
 \photoscale{0.13}
 \end{fullonly}
 
@@ -93,17 +95,13 @@
 \begin{document}
 \makeheaders[c]
 
-\makerubric{employment}
-\makerubric{education}
+\makerubric{cv-parts/education}
+\makerubric{cv-parts/employment}
+\makerubric{cv-parts/skills}
+\makerubric{cv-parts/portfolio}
+\makerubric{cv-parts/misc}
 
-% If you're not a researcher nor an academic, you probably don't have any publications; delete this line.
-%% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
-\input{publications}
-
-\makerubric{skills}
-\makerubric{misc}
-
-\makerubric{referee}
-% \input{referee-full}
+% \makerubric{cv-parts/referee}
+% \input{cv-parts/referee-full}
 
 \end{document}
